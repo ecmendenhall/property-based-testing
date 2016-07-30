@@ -19,7 +19,7 @@
     (is (= [2 2 2] (prime-factors 8)))))
 
 (deftest test-factors-of-nine
-  (testing "returns [3 3 3] for 9"
+  (testing "returns [3 3] for 9"
     (is (= [3 3] (prime-factors 9)))))
 
 (deftest test-factors-of-thirty
