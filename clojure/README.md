@@ -3,6 +3,9 @@
 ## Dependencies
 - [Leiningen](http://leiningen.org/)
 
+## Property-based testing framework
+- [clojure/test.check](https://github.com/clojure/test.check)
+
 ## Setup
 From the `prime-factors` directory, run:
 
