@@ -12,7 +12,7 @@
     (is (= [] (prime-factors 1)))))
 
 (defspec check-primes-have-one-prime-factor
-  10
+  1000
   (testing "A prime number's only prime factor is itself"
     (prop/for-all [prime (gen/elements primes)]
       (= [prime] (prime-factors prime)))))
@@ -43,5 +43,5 @@
   1000
   (testing "Factoring the product of a series of primes returns all the primes"
     (prop/for-all [prime-seq (gen/vector (gen/elements primes))]
-      (= (sort prime-seq)
+      (= prime-seq
          (prime-factors (apply *' prime-seq))))))
